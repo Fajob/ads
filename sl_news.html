@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/ads-style.css" />
+		<style>
+			.ads_mynews {
+				width: 100%;
+				min-height: 680px;
+				background-color: #25354e;
+			}
+			
+			.ads_mynews_cont_unread {
+				color: #00D1FD;
+				margin-top: 10px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			
+			.ads_mynews_cont_read {
+				color: gray;
+			}
+			.ads_mynews_trade_cont{
+				padding: 1rem;
+				border-bottom: 1px solid #DDDDDD;
+			}
+			.ads_mynews_cont_open{
+				white-space: normal;
+				padding: 10px;
+				line-height: 25px;
+				background-color: #FFF;
+				color: #000000;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ads_mynews">
+			<div class="nav">
+				<a href="javascript:history.back(-1);" class="back"></a>
+				算力消息
+				<a href="javascript:;" class="right"></a>
+			</div>
+			<!--算力消息-->
+			<div class="ads_mynews_trade">
+				<a>
+					<div class="ads_mynews_trade_cont">
+						<p>
+							<span style="color: #DDDDDD;">算力消息</span>
+							<span style="color: #DDDDDD;float: right;">2018-05-06 18:09</span>
+						</p>
+						<p class="ads_mynews_cont_unread">开房间看电视飞机客户端卡时间段会卡死机读卡技术监督局按时打卡基督教奥斯卡的骄傲可大可</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<script>
+			$('.ads_mynews_trade_cont').click(function(){
+				if($(this).children('.ads_mynews_cont_unread').hasClass('ads_mynews_cont_open')){
+					$(this).children('.ads_mynews_cont_unread').removeClass('ads_mynews_cont_open');
+				}else{
+					$(this).children('.ads_mynews_cont_unread').addClass('ads_mynews_cont_open');
+				}
+			})				
+		</script>
+	</body>
+
+</html>

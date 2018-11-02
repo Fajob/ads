@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/ads-style.css" />
+		<style>
+			.zhuchebi-record-title{
+				height: 50px;
+				width: 100%;
+				padding-left: 20px;
+				color: #FFFFFF;
+				background-color: #2C3D59;
+				line-height: 50px;
+				border-top: 1px solid #597175;
+			}
+			.ads-zhuchebi-outrecord table{
+				width: 100%;
+				color: #FFFFFF;
+				text-align: center;
+				font-size: 14px;
+			}
+			.ads-zhuchebi-outrecord table th{
+				line-height: 50px;
+				background-color: #2e5eb0;
+			}
+			.ads-zhuchebi-outrecord table td{
+				line-height: 50px;
+				border-bottom: 1px solid #597175;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ads-zhuanbi">
+			<div class="nav">
+			<a href="javascript:history.back(-1);" class="back"></a>
+			注册币转出
+			<a href="javascript:;" class="right">记录</a>
+			</div>
+			<div class="zhuanbi-body">
+				<div class="zhuanbi-useful-property">
+					<span>可用注册币：</span>
+					<span style="color: #ffb400;">65656.2655</span>
+				</div>
+				<div class="zhuanbi-input">
+					<input type="text" placeholder="输入对方手机号"/>
+					<input type="text" placeholder="输入转出数额"/>
+					<input type="password" placeholder="输入交易密码"/>
+					<button type="button">确认</button>
+				</div>
+			</div>
+			<!--转出记录-->
+			<div class="ads-zhuchebi-outrecord">
+				<div class="zhuchebi-record-title">
+					转出记录
+				</div>
+				<table style="border-collapse: collapse;">
+					<tr>
+						<th>日期</th>
+						<th>用户</th>
+						<th>数额</th>
+						<th>状态</th>
+					</tr>
+					<tr>
+						<td>2018/05/03</td>
+						<td>136****2536</td>
+						<td>300</td>
+						<td>已完成</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
